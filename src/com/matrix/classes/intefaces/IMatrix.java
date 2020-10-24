@@ -18,4 +18,6 @@ public interface IMatrix {
 
    public void changeMatrixRow(int i, double[] newRow);
 
+   public void setMatrix(double[][] matrix);
+
 }

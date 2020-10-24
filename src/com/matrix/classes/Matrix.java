@@ -45,5 +45,9 @@ public class Matrix implements IMatrix {
       this.matrix[i] = newRow;
    }
 
+   public void setMatrix(double[][] matrix){
+      this.matrix = matrix;
+   }
+
 }
 
