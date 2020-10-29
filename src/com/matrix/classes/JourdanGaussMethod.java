@@ -2,17 +2,17 @@ package com.matrix.classes;
 
 import com.matrix.classes.intefaces.*;
 
-public class JourdanGaussMethod implements IGetRoots {
+public class JourdanGaussMethod implements IGetRoots, IGetInverseMatrix {
 
-   protected Matrix matrix;
+   protected IMatrix matrix;
    protected double[] equalsArray;
 
-   public JourdanGaussMethod(Matrix matrix, double[] equalsArray) {
+   public JourdanGaussMethod(IMatrix matrix, double[] equalsArray) {
       this.matrix = matrix;
       this.equalsArray = equalsArray;
    }
 
-   public JourdanGaussMethod(Matrix matrix) {
+   public JourdanGaussMethod(IMatrix matrix) {
       this.matrix = matrix;
    }
 
